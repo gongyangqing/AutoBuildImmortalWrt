@@ -36,7 +36,15 @@ if [ "$INCLUDE_DOCKER" = "yes" ]; then
 fi
 
 # usb
-PACKAGES="$PACKAGES kmod-usb-core kmod-usb2 kmod-usb-hid kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-eem kmod-usb-net-cdc-ncm kmod-usb-storage kmod-usb-net-rndis"
+PACKAGES="$PACKAGES kmod-usb-core"
+PACKAGES="$PACKAGES kmod-usb2"
+PACKAGES="$PACKAGES kmod-usb-hid"
+PACKAGES="$PACKAGES kmod-usb-net"
+PACKAGES="$PACKAGES kmod-usb-net-cdc-ether"
+PACKAGES="$PACKAGES kmod-usb-net-cdc-eem"
+PACKAGES="$PACKAGES kmod-usb-net-cdc-ncm"
+PACKAGES="$PACKAGES kmod-usb-storage"
+PACKAGES="$PACKAGES kmod-usb-net-rndis"
 
 # 斐讯N1 无线
 PACKAGES="$PACKAGES kmod-brcmfmac wpad-basic-mbedtls iw iwinfo"
