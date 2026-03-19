@@ -34,6 +34,10 @@ if [ "$INCLUDE_DOCKER" = "yes" ]; then
     PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
     echo "✅ 已选择docker : luci-i18n-dockerman-zh-cn"
 fi
+
+# usb
+PACKAGES="$PACKAGES kmod-usb-core kmod-usb2 kmod-usb-hid kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-eem kmod-usb-net-cdc-ncm kmod-usb-storage kmod-usb-net-rndis"
+
 # 斐讯N1 无线
 PACKAGES="$PACKAGES kmod-brcmfmac wpad-basic-mbedtls iw iwinfo"
 PACKAGES="$PACKAGES perlbase-base perlbase-file perlbase-time perlbase-utf8 perlbase-xsloader"
